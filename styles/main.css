@@ -87,8 +87,37 @@ aside {
 	& h2 {
 		color: var(--primary-color);
 	}
-	& img {
-		margin-bottom: .9em;
+}
+
+/* the styles for the navigation menu */
+nav {
+	background-color: var(--primary-color);
+	margin-top: 0.5em;
+	& ul {
+		list-style-type: none;
+	}
+	& li {
+		padding: 0;
+		margin: 0;
+	}
+	& a {
+		display: block;
+		padding: 0.75em 1em;
+		text-decoration: none;
+		font-weight: bold;
+		color: var(--light);
+	}
+	& a:hover, & a:focus {
+		color: var(--accent-color);
+		font-style: normal;
+	}
+	& a.current {
+		background-color: var(--accent-color);
+		color: var(--dark);
+	}
+	& a.current:hover, & a.current:focus {
+		color: var(--dark);
+		font-style: normal;
 	}
 }
 
